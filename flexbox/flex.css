@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main container */
+#box {
+  width: 800px;
+  height: 400px;
+  border: 2px solid black;
+  position: relative;
+}
+
+/* common box style */
+#box1, #box2, #box3, #box4 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+}
+
+/* TOP CENTER */
+#box1 {
+  background: aqua;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* BOTTOM CENTER */
+#box2 {
+  background: pink;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* LEFT CENTER ✅ (FIX HERE) */
+#box3 {
+  background: brown;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* RIGHT CENTER */
+#box4 {
+  background: yellow;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
